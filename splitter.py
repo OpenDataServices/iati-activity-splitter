@@ -34,7 +34,7 @@ for code, department in departments.items():
                     if participatingOrg.attrib["role"] == "2" and participatingOrg.attrib["ref"] == code:
                         matchingOrg = True
                 except:
-                    matchingOrg = False
+                    pass
         
                 
             if matchingOrg == False:
