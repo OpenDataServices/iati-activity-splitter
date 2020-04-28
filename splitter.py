@@ -14,7 +14,7 @@ for code, department in departments.items():
 
     if not os.path.exists("output/" + code):
         os.mkdir("output/" + code)
-    activityFiles = glob.glob(os.path.join("data/"+ department +"/*.xml"))
+    activityFiles = glob.glob(os.path.join("data/"+ department +"/*"))
 
     for iatifile in activityFiles:
 
